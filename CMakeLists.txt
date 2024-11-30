@@ -13,10 +13,10 @@ target_link_libraries(network PRIVATE Threads::Threads)
 
 target_include_directories(network PUBLIC 
   src/
-  asio/asio/include/
+#   asio/asio/include/
 )
 
-add_subdirectory(googletest)
-add_subdirectory(test)
+# add_subdirectory(googletest)
+# add_subdirectory(test)
 
 add_compile_definitions(ASIO_STANDALONE)
